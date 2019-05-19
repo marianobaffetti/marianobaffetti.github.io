@@ -7018,3 +7018,15 @@ body {
     width: 32px;
     height: 32px;
     display: block; }
+
+.info-card-body .user-meta .username {
+  font-size: 18px;
+  font-weight: 600; }
+
+.info-card-body .user-meta .position {
+  font-size: 90%;
+  color: #00D1B2; }
+
+.info-user-bio {
+  padding-top: 8px;
+  font-size: 92%; }

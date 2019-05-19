@@ -123,3 +123,24 @@ body {
     display: block;
   }
 }
+
+
+.info-card-body {
+    .user-meta {
+      .username {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .position {
+        font-size: 90%;
+        color: $primary;
+      }
+    }
+  }
+  .info-user-bio {
+    padding-top: 8px;
+    font-size: 92%;
+  }
+
+
+  
