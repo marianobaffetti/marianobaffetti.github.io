@@ -7030,3 +7030,7 @@ body {
 .info-user-bio {
   padding-top: 8px;
   font-size: 92%; }
+
+.title-container {
+  font-size: 90%;
+  background-color: #00D1B2; }
