@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+$primary: #00D1B2;
+$secondary: #00D1B2;
+$section: #ededed;
+$muted: #999;
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.columns {
+  margin-top: 0;
+}
+
+.section {
+  background-color: $section;
+  min-height: 100vh;
+  position: relative;
+  .card {
+    border-radius: 6px;
+    overflow:hidden;
+    
+    margin: 0 auto;
+    .header {
+      height: 120px;
+      background: $primary;
+      .avatar {
+        width: 200px;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        img {
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -110px;
+          border: 4px solid white;
+        }
+      }
+    }
+    .card-body {
+      padding: 30px;
+      .user-meta {
+        padding-top: 100px;
+        .username {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .position {
+          font-size: 90%;
+          color: $primary;
+        }
+      }
+    }
+    .user-bio {
+      padding-top: 8px;
+      font-size: 92%;
+      color: $muted;
+    }
+    .action {
+      padding-top: 20px;
+      .button {
+        padding: 16px 20px 16px 20px;
+        background: $primary;
+        border-color: $primary;
+        color: white;
+        border-radius: 100px;
+        transition: opacity .3s;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+//Css Ninja link
+.link-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $primary;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s;
+  img {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+}
